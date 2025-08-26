@@ -34,16 +34,20 @@ body{
 .logo{font-weight:800; color:var(--brand); text-decoration:none; font-size:1.25rem}
 .logo img {
   height: 200px; /* istediğin boyut */
+  width:auto;       /* oranı koru */
   display: block;
 }
 .logo-group {
   display: flex;
   align-items: center;
-  gap: 105px; /* logo ile slogan arasındaki boşluk */
+  gap: 8px; /* logo ile slogan arasındaki boşluk */
 }
 .logo-group .slogan {
   height: 180px; /* menü yüksekliğine göre ayarla */
+  width:auto; 
+  object-fit:contain;
 }
+
 .site-nav { display:flex; gap:20px; }
 .site-nav a {
   color:#0C468B;
@@ -56,6 +60,36 @@ body{
 .site-nav a:hover { color:#F74F17; }
 .site-nav svg { width:18px; height:18px; flex:0 0 auto; }
 .nav-toggle{display:none; font-size:1.2rem; background:none; border:1px solid #ddd; padding:6px 10px; border-radius:10px}
+
+/* Tablet ve altı: hamburger + açılır menü */
+@media (max-width: 768px){
+  .header-inner{ position: relative;     /* .site-nav top:100% bu elemana göre çalışır */gap: 10px; }
+  .nav-toggle{
+    display:inline-block;
+    font-size: 1.2rem;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    padding: 6px 10px; border-radius: 10px;
+  }
+
+  /* Açılır menü header'ın altında açılsın, sağda hizalansın */
+  .site-nav{
+    position: absolute;
+    top: 100%;              /* header'ın altına indir */
+    right: 4%;
+    display: none;
+    background: var(--card);
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0,0,0,.08);
+    padding: 8px;
+    min-width: 200px;
+    z-index: 50;           /* içerikten üstte, header içini kaplamıyor */
+  }
+
+  .site-nav.open{ display: flex; }    /* JS bunu ekliyor */
+  .site-nav a{ padding: 10px 12px; }  /* dokunmatik hedef */
+}
 
 .hero{
   position: relative;
@@ -94,6 +128,17 @@ body{
 .hero > .container{ position:relative; z-index:1; }
 .hero .btn{margin-top:14px}
 
+/* Tablet */
+@media (max-width: 992px){
+  .features{ grid-template-columns: 1fr 1fr; }
+  .cards{ grid-template-columns: 1fr 1fr; }
+  .two-col{ grid-template-columns: 1fr; }
+}
+@media (max-width: 640px){
+  .features{ grid-template-columns: 1fr; }
+  .cards{ grid-template-columns: 1fr; }
+}
+
 .features{display:grid; gap:16px; grid-template-columns:repeat(3, 1fr); margin:28px auto}
 .feature-card{
   background:var(--card); border-radius:var(--radius); padding:18px; box-shadow:var(--shadow);
@@ -113,6 +158,10 @@ body{
   color: #fff;
   padding: 30px 40px 14px;   /* soldan boşluk verelim */
   text-align: left;          /* sola hizala */
+}
+
+@media (max-width: 640px){
+  .site-footer{ padding: 24px 16px; }
 }
 
 .site-footer a {
@@ -140,22 +189,24 @@ body{
 
 .btn{display:inline-block; text-decoration:none; border-radius:12px; padding:10px 16px; font-weight:700; border:1px solid transparent}
 .btn.primary {
-  background: #fff;       /* Normalde A4B mavisi */
+  display: inline-block;
+  background: #fff;
   color: #110101;
   border: none;
   padding: 12px 28px;
   font-weight: 600;
   border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  text-decoration: none;        /* <a> alt çizgiyi kaldır */
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .btn.primary:hover {
-  background: #F74F17;       /* Hover’da turuncu */
+  background: var(--accent);    /* logodaki turuncu */
   color: #fff;
 }
 
-.contact-form{display:grid; gap:14px; max-width:640px}
+.contact-form{ max-width: 640px; width: 100%; }
 .form-row{display:flex; flex-direction:column; gap:6px}
 input,textarea{padding:10px 12px; border:1px solid #e5e7eb; border-radius:10px; background:#fff; font:inherit}
 input:focus, textarea:focus{outline:2px solid #c7d2fe; border-color:#a5b4fc}
@@ -163,6 +214,7 @@ input:focus, textarea:focus{outline:2px solid #c7d2fe; border-color:#a5b4fc}
 .status{margin-top:6px; font-size:.95rem; color:var(--muted)}
 .map-embed{margin-top:20px}
 .map-placeholder{background:#e5e7eb; border:1px dashed #94a3b8; padding:40px; text-align:center; border-radius:12px; color:#475569}
+table{ width: 100%; border-collapse: collapse; }
 
 @media (max-width: 900px){
   .features{grid-template-columns:1fr 1fr}
@@ -208,3 +260,88 @@ input:focus, textarea:focus{outline:2px solid #c7d2fe; border-color:#a5b4fc}
   width: 18px;
   height: 18px;
 }
+
+/* ——— Responsive Helpers ——— */
+img, svg { max-width: 100%; height: auto; display: block; }
+.container { width: min(1200px, 92%); margin-inline: auto; }
+:root { --tap: 12px; } /* dokunmatik boşluk */
+
+/* 1) 360px ve altı: header satır kırsın, elemanları yeniden sırala */
+@media (max-width: 768px){
+  .header-inner{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    flex-wrap: wrap;              /* <-- satır kır */
+    row-gap: 6px;                 /* satırlar arası nefes */
+  }
+
+  /* Hamburger/menü butonu ikinci sırada sağa yaslı kalsın */
+  .nav-toggle{
+    order: 2;
+    margin-left: auto;            /* sağa yasla */
+    padding: 4px 8px;             /* daha küçük buton */
+  }
+
+  /* 2) Logo ve sloganı ekrana göre ölçekle (clamp) */
+  .logo img{
+    height: clamp(160px, 12vw, 50px); /* 32–40px arası, ekrana göre büyüsün */
+    width: auto;
+  }
+  .logo-group .slogan{
+    height: clamp(100px, 12vw, 32px);  /* 20–28px arası, ekrana göre büyüsün */
+    width: auto;
+    object-fit: contain;
+  }
+
+  /* 3) Menü açılırsa içerik üzerine binmesin (alt satırda açılsın) */
+  .site-nav{
+    position: absolute;
+    top: 100%;
+    right: 4%;
+    display: none;
+    background: var(--card);
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0,0,0,.08);
+    flex-direction: column;
+    padding: 8px;
+    min-width: 200px;
+    z-index: 50;
+  }
+  .site-nav.open{ display:flex; }
+}
+
+.map-embed{
+  position: relative;
+  aspect-ratio: 16/9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,.1);
+  margin-top: 16px;
+}
+.map-embed iframe{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.map-static{
+  position: relative;
+  display: inline-block;
+  margin-top: 16px;
+}
+.map-static img{
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.1);
+}
+.map-static .open-map{
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+}
+
+.is-hidden{ display: none !important; }
