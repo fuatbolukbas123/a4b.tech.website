@@ -1,0 +1,119 @@
+{
+    "nav.home": "Ana Sayfa",
+    "nav.about": "Hakkımızda",
+    "nav.services": "Hizmetlerimiz",
+    "nav.contact": "İletişim",
+    "nav.hr": "Kariyer",
+  
+    "hero.title": "<strong>Daha iyiyi hedefle, geleceği inşa et.</strong>",
+    "hero.sub1": "Kaliteli yazılımlar, profesyonel çözümler, uzun vadeli ortaklık.",
+    "hero.cta": "Hizmetlerimizi İnceleyin",
+  
+    "home.feat.rel.title": "Güvenilirlik",
+    "home.feat.rel.desc": "Uzman yazılım mimarlarımızın deneyimiyle, şeffaf ve izlenebilir proje yönetimi sunuyoruz. Her aşamada açık iletişim ve denetlenebilir süreçler sayesinde projelerinizi güvenle hayata geçiriyoruz.",
+    "home.feat.qa.title": "Mükemmellik / Kalite",
+    "home.feat.qa.desc": "Yazılım geliştirme sürecinin her adımında uluslararası mühendislik standartlarını uygular, ölçeklenebilir ve sürdürülebilir çözümler üretiriz. Kod kalitesinden kullanıcı deneyimine kadar her detayda en iyisini hedefleriz.",
+    "home.feat.pm.title": "Çeviklik",
+    "home.feat.pm.desc": "Değişen ihtiyaçlara hızlı uyum sağlayarak kısa sürede değer üretiriz. Agile metodolojilerle, proje sürecinde esneklik ve yüksek verimlilik sağlarız.",
+    "home.feat.inn.title": "İnovasyon",
+    "home.feat.inn.desc": "Yeni teknolojileri hızla benimseyerek işinizi geleceğe taşırız. AR-GE odaklı yaklaşımımızla, sektörde fark yaratacak yenilikçi çözümleri hızla hayata geçiririz.",
+    "home.feat.supp.title": "Sürekli Destek",
+    "home.feat.supp.desc": "Proje tesliminden sonra da yanınızdayız. Bakım, güncelleme ve iyileştirme ihtiyaçlarınıza hızlı yanıt verir, sistemlerinizin kesintisiz çalışmasını garanti altına alırız.",
+    "home.feat.prts.title": "Ortaklık",
+    "home.feat.prts.desc": "Projelerinizi kendi projemiz gibi sahiplenir, işinizi büyütmek için stratejik katkı sağlarız. Uzun vadeli iş birlikleriyle, yalnızca yazılım değil sürdürülebilir başarı inşa ederiz.",
+
+    "home.container.whyus.title": "Neden Biz?",
+    "home.container.whyus.desc": "Yazılım geliştirme yalnızca kod yazmaktan ibaret değildir; doğru mimariyi kurmak, ölçeklenebilir bir altyapı inşa etmek ve uzun vadeli başarıyı garanti altına almak uzmanlık ister. A4B Tech, uzun yıllardır sektörde görev almış, farklı endüstrilerde kritik projeler geliştirmiş deneyimli yazılım mimarları tarafından kurulmuştur. Her projemizde, yılların getirdiği teknik birikimi, modern teknolojiler ve çevik (Agile) çalışma prensipleri ile birleştirerek; hızlı, güvenilir ve sürdürülebilir çözümler sunarız. Bizimle çalıştığınızda yalnızca bir yazılım tedarikçisi değil, iş hedeflerinize ulaşmanızı sağlayacak stratejik bir teknoloji ortağı kazanırsınız.",
+    "home.container.whyus.chlst1": "Uzman Ekip",
+    "home.container.whyus.chlst2": "Çevik Teslimat",
+    "home.container.whyus.chlst3": "Dokümantasyon ve Eğitim",
+
+    "home.container.success.title": "Öne Çıkan Başarı (DEMO)",
+    "home.container.success.desc": "Bir müşterimiz için teslim süresini %30 kısaltan proje yönetim iyileştirmeleri yaptık.",
+
+    "about.meta.title": "Hakkımızda - A4B Tech.",
+    "brand.logoAlt": "A4B Tech Logosu",
+  
+    "about.title": "Hakkımızda",
+    "about.lead": "<strong>A4B Tech</strong>, kurumsal yazılım geliştirme, sistem entegrasyonu ve ürün modernizasyonu alanlarında uzmanlaşmış bir teknoloji şirketidir. Kurucu ekibimiz, yıllardır savunma, haberleşme, finans ve endüstriyel yazılım projelerinde görev almış deneyimli yazılım mimarları ve mühendislerden oluşur. Her projemizde temiz kod, doğru mimari ve ölçülebilir başarı metrikleri yaklaşımını esas alırız. Müşteri memnuniyetini merkeze alan yaklaşımımızla, projelerinizi zamanında, bütçesinde ve yüksek kalite standartlarında teslim ederiz.",
+  
+    "about.vision.title": "Vizyonumuz",
+    "about.vision.body": "<strong>“Aim 4 Better, Build for Future”</strong> sloganımız doğrultusunda; modern teknolojilerle kaliteli, ölçeklenebilir ve güvenilir yazılım çözümleri üreterek, yazılım mühendisliğinde kalite ve güvenin simgesi haline gelmek.",
+  
+    "about.mission.title": "Misyonumuz",
+    "about.mission.li1": "Müşterilerimize, ihtiyaçlarına en uygun, ölçeklenebilir ve sürdürülebilir yazılım çözümleri sunmak.",
+    "about.mission.li2": "Yazılım geliştirme süreçlerinde en iyi mühendislik uygulamalarını hayata geçirmek.",
+    "about.mission.li3": "Teknolojik yenilikleri sürekli takip ederek, ürün ve hizmetlerimizi güncel, güvenli ve yüksek performanslı tutmak.",
+    "about.mission.li4": "İş ortaklarımızın rekabet gücünü artıran çözümler üretmek.",
+  
+    "about.values.title": "Değerlerimiz",
+    "about.values.v1": "<strong>Deneyim ve Uzmanlık:</strong> Yılların getirdiği tecrübeyi her projeye yansıtmak.",
+    "about.values.v2": "<strong>Kalite Odaklılık:</strong> Koddan mimariye, kullanıcı deneyiminden güvenliğe kadar her aşamada yüksek standartları korumak.",
+    "about.values.v3": "<strong>Şeffaflık ve Güven:</strong> Proje süreçlerinde açık iletişim, net raporlama ve güvene dayalı iş ilişkileri.",
+    "about.values.v4": "<strong>Çeviklik:</strong> Değişen ihtiyaçlara hızlı uyum sağlayarak, değer üretme süresini kısaltmak.",
+    "about.values.v5": "<strong>Sürekli Gelişim:</strong> Hem teknik hem de metodolojik açıdan sürekli iyileştirme kültürü.",
+    "about.values.v6": "<strong>Müşteri Odaklılık:</strong> Her kararın merkezine müşterinin başarısını koymak.",
+    "about.values.v7": "<strong>İnsan Odaklılık:</strong> Yazılımın temel yapıtaşının insan olduğuna inanıyoruz. Çalışanlarımızın değerini korumak, onların gelişimini desteklemek ve birlikte üretmek en büyük gücümüzdür.",
+
+    "contact.meta.title": "İletişim - A4B Tech.",
+    "contact.title": "İletişim",
+    "contact.lead": "Bizimle iletişime geçin. Size en kısa sürede dönüş yapalım.",
+  
+    "contact.name": "Ad Soyad",
+    "contact.name.ph": "Adınızı ve soyadınızı yazın",
+  
+    "contact.email": "E-posta",
+    "contact.email.ph": "ornek@domain.com",
+  
+    "contact.message": "Mesaj",
+    "contact.message.ph": "Kısa bir mesaj bırakın",
+  
+    "contact.send": "Gönder",
+    "contact.address.title": "Adresimiz",
+    "contact.map.open": "Haritada Aç",
+  
+    "contact.form.ok": "Teşekkürler! Mesajınız alındı (demo).",
+    "contact.form.invalid": "Lütfen formdaki hataları düzeltin.",
+    
+    "footer.contact.title":"İletişim",
+    "footer.contact.slogan":"Yazılımda güçlü çözüm ortağınız.",
+    "footer.contact.tel": "Tel: +90 (312) 000 00 00",
+    "footer.contact.email": "E-posta: info@a4btech.com.tr",
+    "footer.contact.addr": "Adres: Ankara, Türkiye",
+    "footer.contact.social":"Sosyal Medya",
+    "footer.tagline": "Yazılımda güçlü çözüm ortağınız.",
+    "footer.copyright": "© 2025 A4B Tech. Tüm Hakları Saklıdır.",
+
+    "hr.meta.title": "İnsan Kaynakları - A4B Tech.",
+    "hr.title": "İnsan Kaynakları",
+    "hr.lead": "A4B Tech ailesine katılmak ister misiniz? Yetenekli mühendisler ve ekip arkadaşları arıyoruz.",
+  
+    "hr.jobs.software.title": "Yazılım Mühendisi",
+    "hr.jobs.software.desc": "Java, Spring Boot, Angular/React konularında deneyimli, takım çalışmasına yatkın mühendisler.",
+    "hr.jobs.qa.title": "Test Mühendisi",
+    "hr.jobs.qa.desc": "Otomasyon test araçları konusunda bilgili, kalite odaklı mühendisler.",
+    "hr.jobs.pm.title": "Proje Yöneticisi",
+    "hr.jobs.pm.desc": "Agile/Scrum deneyimi olan, müşteri ilişkileri ve ekip yönetiminde güçlü yöneticiler.",
+    "hr.jobs.apply": "Başvur",
+  
+    "hr.intern.title": "Staj Olanakları",
+    "hr.intern.desc": "Üniversite öğrencileri için yaz/kış dönemi staj programlarımız bulunmaktadır.",
+    "hr.intern.apply": "Staj Başvurusu",
+
+    "services.meta.title": "Hizmetler - A4B Tech.",
+    "services.title": "Hizmetlerimiz",
+  
+    "services.consulting.title": "Danışmanlık",
+    "services.consulting.desc": "İş süreçleri analizi, strateji ve yol haritası oluşturma.",
+  
+    "services.dev.title": "Yazılım Geliştirme",
+    "services.dev.desc": "Web, mobil ve masaüstü çözümler; entegrasyon ve test.",
+  
+    "services.qa.title": "Yazılım Testi",
+    "services.qa.desc": "Manuel test, test otomasyonu, performans, güvenlik testleri ve sürekli entegrasyon.",
+  
+    "services.support.title": "Bakım & Destek",
+    "services.support.desc": "Kesintisiz destek, proaktif bakım ve performans optimizasyonu.",
+
+    "search.placeholder": "Sitede ara..."
+  }
