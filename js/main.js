@@ -33,36 +33,92 @@ if (navToggle && siteNav) {
   });
 }
 
-// ==== FORM (basit doğrulama + demo submit) ====
-const form = document.getElementById('contactForm');
-if (form) {
+// ==== FORM (çok dilli, custom mesajlar) ====
+(function () {
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+
+  // Tarayıcı/yerel depodan dili al
+  function getLang() {
+    return localStorage.getItem('lang') || document.documentElement.lang || 'tr';
+  }
+
+  // Mesaj sözlüğü
+  const MESSAGES = {
+    tr: {
+      required: 'Bu alan zorunludur.',
+      email: 'Geçerli bir e-posta adresi giriniz.',
+      minlen: (n) => `En az ${n} karakter giriniz.`,
+      fix: 'Lütfen formdaki hataları düzeltin.',
+      ok: 'Teşekkürler! Mesajınız alındı (demo).'
+    },
+    en: {
+      required: 'This field is required.',
+      email: 'Please enter a valid email address.',
+      minlen: (n) => `Please enter at least ${n} characters.`,
+      fix: 'Please fix the errors in the form.',
+      ok: 'Thanks! Your message was received (demo).'
+    }
+  };
+
+  const fields = ['name', 'email', 'message'];
+  const status = document.getElementById('formStatus');
+
+  // Canlı doğrulama: yazdıkça hata temizlensin
+  fields.forEach((id) => {
+    const input = document.getElementById(id);
+    if (!input) return;
+    input.addEventListener('input', () => {
+      input.setCustomValidity('');
+      const err = input.parentElement.querySelector('.error');
+      if (err && input.checkValidity()) err.textContent = '';
+    });
+  });
+
+  // Gönderimde kontrol
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const status = document.getElementById('formStatus');
-    const fields = ['name','email','message'];
+    const lang = getLang();
+    const T = MESSAGES[lang] || MESSAGES.tr;
+
     let valid = true;
 
-    fields.forEach(id => {
+    fields.forEach((id) => {
       const input = document.getElementById(id);
-      const error = input.parentElement.querySelector('.error');
-      if (!input.checkValidity()) {
-        error.textContent = input.validationMessage;
+      if (!input) return;
+      const err = input.parentElement.querySelector('.error');
+
+      // Varsayılan tarayıcı balonunu sustur
+      input.setCustomValidity('');
+
+      if (!input.validity.valid) {
+        let msg = T.required;
+
+        if (input.validity.valueMissing) {
+          msg = T.required;
+        } else if (input.validity.typeMismatch && id === 'email') {
+          msg = T.email;
+        } else if (input.validity.tooShort) {
+          msg = T.minlen(input.minLength);
+        }
+
+        if (err) err.textContent = msg;
         valid = false;
       } else {
-        error.textContent = '';
+        if (err) err.textContent = '';
       }
     });
 
     if (!valid) {
-      status.textContent = 'Lütfen formdaki hataları düzeltin.';
+      if (status) status.textContent = T.fix;
       return;
     }
 
-    // Demo: gerçek backend yok
-    status.textContent = 'Teşekkürler! Mesajınız alındı (demo).';
+    // Buraya gerçek gönderim (fetch) ekleyebilirsin
+    if (status) status.textContent = T.ok;
     form.reset();
   });
-}
+})();
 
 // ==== MAP (offline/online) ====
 function buildGMapsEmbedURL(lat, lng) {
