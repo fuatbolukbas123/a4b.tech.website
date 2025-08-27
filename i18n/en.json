@@ -1,1 +1,113 @@
+{
+    "nav.home": "Home",
+    "nav.about": "About",
+    "nav.services": "Services",
+    "nav.contact": "Contact",
+    "nav.hr": "Careers",
+  
+    "hero.title": "<strong>Aim higher, build the future.</strong>",
+    "hero.sub1": "Quality software, professional solutions, long-term partnership.",
+    "hero.cta": "Explore Our Services",
+  
+    "home.feat.rel.title": "Reliability",
+    "home.feat.rel.desc": "With the experience of our expert software architects, we offer transparent and traceable project management. Thanks to open communication and auditable processes at every stage, we implement your projects with confidence.",
+    "home.feat.qa.title": "Excellence / Quality",
+    "home.feat.qa.desc": "We apply international engineering standards at every step of the software development process, producing scalable and sustainable solutions. We aim for the best in every detail, from code quality to user experience.",
+    "home.feat.pm.title": "Agility",
+    "home.feat.pm.desc": "We create value quickly by adapting quickly to changing needs. We ensure flexibility and high efficiency throughout the project process with Agile methodologies.",
+    "home.feat.inn.title": "Innovation",
+    "home.feat.inn.desc": "We rapidly adopt new technologies We carry your business into the future. With our R&D-focused approach, we quickly implement innovative solutions that will make a difference in the industry.",
+    "home.feat.supp.title": "Continuous Support",
+    "home.feat.supp.desc": "We are with you even after project delivery. We respond quickly to your maintenance, update, and improvement needs, ensuring the uninterrupted operation of your systems.",
+    "home.feat.prts.title": "Partnership",
+    "home.feat.prts.desc": "We embrace your projects as our own and provide strategic contributions to grow your business. Through long-term partnerships, we build not only software but also sustainable success.",
 
+    "home.container.whyus.title": "Why Us?",
+    "home.container.whyus.desc": "Software development is more than just writing code; establishing the right architecture, building a scalable infrastructure, and ensuring long-term success requires expertise. A4B Tech has been working in the industry for many years, working in various industries. Founded by experienced software architects who have developed critical projects. In every project, we combine years of technical expertise with modern technologies and agile working principles to deliver fast, reliable, and sustainable solutions. When you work with us, you gain not just a software supplier, but a strategic technology partner that will help you achieve your business goals.",
+    "home.container.whyus.chlst1": "Expert Team",
+    "home.container.whyus.chlst2": "Agile Delivery",
+    "home.container.whyus.chlst3": "Documentation and Training",
+
+    "home.container.success.title": "Featured Achievement (DEMO)",
+    "home.container.success.desc": "We made project management improvements that reduced delivery time for a client by 30%.",
+
+    "about.meta.title": "About Us - A4B Tech.",
+    "brand.logoAlt": "A4B Tech Logo",
+  
+    "about.title": "About Us",
+    "about.lead": "<strong>A4B Tech</strong> is a technology company specialized in enterprise software development, system integration, and product modernization. Our founding team consists of seasoned software architects and engineers who have delivered critical projects for defense, communications, finance, and industrial domains for years. In every project, we prioritize clean code, proper architecture, and measurable success metrics. With a customer-centric approach, we deliver your projects on time, on budget, and at high quality standards.",
+  
+    "about.vision.title": "Our Vision",
+    "about.vision.body": "Guided by our motto <strong>“Aim 4 Better, Build for Future”</strong>, we strive to become a symbol of quality and trust in software engineering by delivering high-quality, scalable, and reliable software solutions with modern technologies.",
+  
+    "about.mission.title": "Our Mission",
+    "about.mission.li1": "Provide customers with scalable, sustainable software tailored to their needs.",
+    "about.mission.li2": "Apply best engineering practices throughout the software development lifecycle.",
+    "about.mission.li3": "Continuously follow technological innovation to keep our products secure, up-to-date, and high-performance.",
+    "about.mission.li4": "Deliver solutions that strengthen our partners’ competitiveness.",
+  
+    "about.values.title": "Our Values",
+    "about.values.v1": "<strong>Experience & Expertise:</strong> Bringing years of experience to every project.",
+    "about.values.v2": "<strong>Quality-First:</strong> Upholding high standards from code to architecture, UX to security.",
+    "about.values.v3": "<strong>Transparency & Trust:</strong> Open communication, clear reporting, and trust-based relationships.",
+    "about.values.v4": "<strong>Agility:</strong> Rapidly adapting to changing needs to shorten time-to-value.",
+    "about.values.v5": "<strong>Continuous Improvement:</strong> Ongoing technical and methodological enhancement.",
+    "about.values.v6": "<strong>Customer-Centricity:</strong> Putting customer success at the heart of every decision.",
+    "about.values.v7": "<strong>People-First:</strong> We believe people are the foundation of software. We value our team, support their growth, and build together.",
+
+    "contact.meta.title": "Contact - A4B Tech.",
+    "contact.title": "Contact",
+    "contact.lead": "Get in touch with us. We’ll get back to you as soon as possible.",
+    "contact.name": "Full Name",
+    "contact.name.ph": "Enter your full name",
+    "contact.email": "Email",
+    "contact.email.ph": "name@example.com",
+    "contact.message": "Message",
+    "contact.message.ph": "Write a short message",
+    "contact.send": "Send",
+    "contact.address.title": "Our Address",
+    "contact.map.open": "Open in Maps",
+    "contact.form.ok": "Thanks! Your message has been received (demo).",
+    "contact.form.invalid": "Please fix the errors in the form.",
+
+    "footer.contact.title":"Contact",
+    "footer.contact.tel": "Tel: +90 (312) 000 00 00",
+    "footer.contact.email": "E-mail: info@a4btech.com.tr",
+    "footer.contact.addr": "Address: Ankara, Türkiye",
+    "footer.contact.social":"Social Media",
+    "footer.tagline": "Your strong solution partner in software.",
+    "footer.copyright": "© 2025 A4B Tech. All Rights Reserved.",
+    
+    "hr.meta.title": "Human Resources - A4B Tech.",
+    "hr.title": "Human Resources",
+    "hr.lead": "Would you like to join the A4B Tech family? We are looking for talented engineers and teammates.",
+
+    "hr.jobs.software.title": "Software Engineer",
+    "hr.jobs.software.desc": "Engineers experienced in Java, Spring Boot, and Angular/React, with strong teamwork skills.",
+    "hr.jobs.qa.title": "Test Engineer",
+    "hr.jobs.qa.desc": "Quality-focused engineers with knowledge of test automation tools.",
+    "hr.jobs.pm.title": "Project Manager",
+    "hr.jobs.pm.desc": "Leaders with Agile/Scrum experience, strong in customer relations and team management.",
+    "hr.jobs.apply": "Apply",
+
+    "hr.intern.title": "Internship Opportunities",
+    "hr.intern.desc": "We offer summer/winter internship programs for university students.",
+    "hr.intern.apply": "Apply for Internship",
+
+    "services.meta.title": "Services - A4B Tech.",
+    "services.title": "Our Services",
+  
+    "services.consulting.title": "Consulting",
+    "services.consulting.desc": "Business process analysis, strategy, and roadmap creation.",
+  
+    "services.dev.title": "Software Development",
+    "services.dev.desc": "Web, mobile, and desktop solutions; integration and testing.",
+  
+    "services.qa.title": "Software Testing",
+    "services.qa.desc": "Manual testing, test automation, performance and security testing, and continuous integration.",
+  
+    "services.support.title": "Maintenance & Support",
+    "services.support.desc": "Uninterrupted support, proactive maintenance, and performance optimization.",
+
+    "search.placeholder": "Search the site..."
+  }
