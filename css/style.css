@@ -30,7 +30,13 @@ body{
   background:#FAFBFC; border-bottom:1px solid #eee;
   box-shadow: 0 2px 12px rgba(0,0,0,.03);
 }
-.header-inner{display:flex; align-items:center; justify-content:space-between; padding:14px 0;}
+.header-inner{
+  display:flex; 
+  align-items:center; 
+  justify-content:space-between; 
+  padding:14px 0;
+  gap: 60px;
+}
 .logo{font-weight:800; color:var(--brand); text-decoration:none; font-size:1.25rem}
 .logo img {
   height: 200px; /* istediğin boyut */
@@ -120,13 +126,11 @@ body{
   background: linear-gradient(135deg, rgba(12,70,139,.4), rgba(22,90,174,.4));
 }
 .hero-title {
-  color: #3F6AA1;
+  color: #fff;
 }
 
-.hero-text { margin-bottom: 220px; }  /* yazılar ile buton arası */
-
 .hero > .container{ position:relative; z-index:1; }
-.hero .btn{margin-top:14px}
+.hero .btn{margin-top:300px}
 
 /* Tablet */
 @media (max-width: 992px){
@@ -345,3 +349,73 @@ img, svg { max-width: 100%; height: auto; display: block; }
 }
 
 .is-hidden{ display: none !important; }
+
+.actions{
+  display:flex; align-items:center; gap:10px;
+}
+#siteSearch{
+  width: min(280px, 38vw);
+  padding: 10px 12px;
+  border:1px solid #e5e7eb; border-radius:10px;
+  font: inherit;
+}
+.search-results{
+  position:absolute;
+  margin-top: 6px;
+  background:#fff; border:1px solid #e5e7eb; border-radius:12px;
+  box-shadow:0 12px 24px rgba(0,0,0,.08);
+  padding:6px; width: min(420px, 90vw);
+  z-index: 1000;
+}
+.search-results a{
+  display:block; padding:8px 10px; border-radius:8px;
+  color:#0C468B; text-decoration:none;
+}
+.search-results a:hover{ background:#f5f7fb; }
+.search-results a span{
+  display:block; color:#6b7280; font-size:.9rem;
+}
+
+.site-nav a::after { content: none !important; }
+.site-nav, .site-nav ul { list-style: none; padding: 0; margin: 0; }
+
+.site-nav a {
+  display: flex;
+  align-items: center;
+  gap: 6px;            /* ikon–metin arası */
+  color:#0C468B;
+  text-decoration:none;
+  font-weight:600;
+  padding: 6px 10px;
+  transition: color .2s ease;
+}
+.site-nav svg { width:18px; height:18px; flex:0 0 auto; }
+.site-nav a:hover { color:#F74F17; }
+
+/* Dil linkleri menü ile aynı hizada olsun */
+.site-nav .lang-switch {
+  display:flex; align-items:center; gap:6px;
+  color:#0C468B; text-decoration:none; font-weight:600;
+  padding:6px 10px; border-radius: 8px;
+}
+.site-nav .lang-switch:hover { color:#F74F17; }
+
+/* Aktif dili işaretle */
+.site-nav .lang-switch.active {
+  background: #0C468B10;
+  color:#0C468B;
+}
+
+/* Küçük ikonlar */
+.site-nav .lang-switch svg { width:18px; height:18px; flex:0 0 auto; }
+
+/* i18n metinler yüklenirken görünürlük kilidi (layout sabit kalsın) */
+html.i18n-loading .site-nav,
+html.i18n-loading [data-i18n],
+html.i18n-loading [data-i18n-html],
+html.i18n-loading [data-i18n-placeholder] {
+  visibility: hidden;
+}
+
+/* Menüde metin uzunluk farklarından kaynaklı zıplamayı azalt */
+.site-nav a span { white-space: nowrap; }
